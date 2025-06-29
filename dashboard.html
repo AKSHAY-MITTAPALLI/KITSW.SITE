@@ -1,0 +1,440 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Student Login
+</title><link href="../../CSS/form.css" rel="stylesheet" /><link href="../../CSS/Vertical.css" rel="stylesheet" /><link href="../../CSS/styles.css" rel="stylesheet" />
+       <script type="text/javascript">
+
+           //function PostToNewWindow() {
+           //    originalTarget = document.forms[0].target;
+           //    document.forms[0].target = '_blank';
+           //    window.setTimeout("document.forms[0].target=originalTarget;", 0);
+           //    return true;
+           //}
+
+
+
+           top.window.moveTo(0, 0);
+           if (document.all) {
+               top.window.resizeTo(screen.availWidth, screen.availHeight);
+           }
+           else if (document.layers || document.getElementById) {
+               if (top.window.outerHeight < screen.availHeight || top.window.outerWidth < screen.availWidth) {
+
+                   top.window.outerHeight = screen.availHeight;
+                   top.window.outerWidth = screen.availWidth;
+               }
+           }
+
+
+           function noBack() {
+               window.history.forward();
+           }
+           noBack();
+           window.onload = noBack;
+           window.onpageshow = function (evt) {
+               if (evt.persisted) noBack();
+           }
+           window.onunload = function () {
+               void (0);
+           }
+
+       </script>
+
+    <script type="text/javascript">
+
+        $(document).keydown(function (event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            else if ((event.ctrlkey && event.shiftkey && event.keyCode == 73) || (event.shiftkey && event.ctrlkey && event.keyCode == 74)) {
+                return false;
+            }
+        });
+        $(document).on("contextmenu", function (e) {
+            e.preventDefault();
+        });
+        </script>
+
+
+   
+    
+</head>
+<body oncontextmenu="return false;">
+   <form name="aspnetForm" method="post" action="./overallMarks.aspx" id="aspnetForm" autocomplete="off">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTA2NzY1NzYwNQ9kFgJmD2QWAgIDD2QWDgIFDw8WAh4ISW1hZ2VVcmwFQX5cU3R1ZGVudExvZ2luXFN0dWRlbnRcU3R1ZGVudFBob3RvLmFzcHg/U3R1ZElkPTE0OTE5JkNvbENvZGU9UFNTZGQCCQ8PFgIeBFRleHQFCEIyM0lUMDA1ZGQCDQ8PFgIfAQURTUlUVEFQQUxMSSBBS1NIQVlkZAIRDw8WAh8BBQJJVGRkAhUPDxYCHwEFC0lWIFNFTUVTVEVSZGQCHQ9kFhoCCQ8PFgIeB1Zpc2libGVoZGQCCw8PFgIfAmhkZAINDw8WAh8CaGRkAg8PDxYCHwJoZGQCEw8PFgIfAmhkZAIhDw8WAh8CaGRkAiMPDxYCHwJoZGQCKQ8PFgIfAmhkZAIrDw8WAh8CaGRkAjUPDxYCHwJoZGQCNw8PFgIfAmhkZAI5Dw8WAh8CaGRkAkcPDxYCHwJnZGQCHw9kFgICAQ9kFgICAw9kFhACBQ8PFgIfAQUFQ0dQQTpkZAIHDw8WAh8BBQQ0LjI4ZGQCCQ8PFgIfAQUMUGVyY2VudGFnZSA6ZGQCCw8PFgIfAWVkZAIPDw8WAh8BBQs0OC4wMC82NS4wMGRkAhMPDxYCHwEFBDUvMjlkZAIVDw8WAh8BBXsqTGV0dGVyIEdyYWRlIEluZGljYXRlcyBHcmFkZSBQb2ludHMgKFMgLSAxMC4wMCwgIEEgLSA5LjAwLCAgQiAtIDguMDAsICBDIC0gNy4wMCwgIEQgLSA2LjAwLCAgUCAtIDQuMDAsICBGIC0gMC4wMCwgIC0gLSAwLilkZAIXD2QWBgIBDzwrAAsBChQrABE8KwAEAQAWCB4KSGVhZGVyVGV4dAUFUy5Oby4eCURhdGFGaWVsZAUFUy5Oby4eDlNvcnRFeHByZXNzaW9uBQVTLk5vLh4IUmVhZE9ubHloPCsABAEAFggfAwUKQ291cnNlQ29kZR8EBQpDb3Vyc2VDb2RlHwUFCkNvdXJzZUNvZGUfBmg8KwAEAQAWCB8DBQZDb3Vyc2UfBAUGQ291cnNlHwUFBkNvdXJzZR8GaDwrAAQBABYIHwMFCEF0dGVtcHQxHwQFCEF0dGVtcHQxHwUFCEF0dGVtcHQxHwZoPCsABAEAFggfAwUIQXR0ZW1wdDIfBAUIQXR0ZW1wdDIfBQUIQXR0ZW1wdDIfBmg8KwAEAQAWCB8DBQhBdHRlbXB0Mx8EBQhBdHRlbXB0Mx8FBQhBdHRlbXB0Mx8GaDwrAAQBABYIHwMFCEF0dGVtcHQ0HwQFCEF0dGVtcHQ0HwUFCEF0dGVtcHQ0HwZoPCsABAEAFggfAwUIQXR0ZW1wdDUfBAUIQXR0ZW1wdDUfBQUIQXR0ZW1wdDUfBmg8KwAEAQAWCB8DBQhBdHRlbXB0Nh8EBQhBdHRlbXB0Nh8FBQhBdHRlbXB0Nh8GaDwrAAQBABYIHwMFCEF0dGVtcHQ3HwQFCEF0dGVtcHQ3HwUFCEF0dGVtcHQ3HwZoPCsABAEAFggfAwUIQXR0ZW1wdDgfBAUIQXR0ZW1wdDgfBQUIQXR0ZW1wdDgfBmg8KwAEAQAWCB8DBQhBdHRlbXB0OR8EBQhBdHRlbXB0OR8FBQhBdHRlbXB0OR8GaDwrAAQBABYIHwMFCUF0dGVtcHQxMB8EBQlBdHRlbXB0MTAfBQUJQXR0ZW1wdDEwHwZoPCsABAEAFggfAwUJQXR0ZW1wdDExHwQFCUF0dGVtcHQxMR8FBQlBdHRlbXB0MTEfBmg8KwAEAQAWCB8DBQlBdHRlbXB0MTIfBAUJQXR0ZW1wdDEyHwUFCUF0dGVtcHQxMh8GaDwrAAQBABYIHwMFB0NyZWRpdHMfBAUHQ3JlZGl0cx8FBQdDcmVkaXRzHwZoPCsABAEAFggfAwUKQWN0Q3JlZGl0cx8EBQpBY3RDcmVkaXRzHwUFCkFjdENyZWRpdHMfBmhkAgIPPCsACwEKFCsAETwrAAQBABYIHwMFBVMuTm8uHwQFBVMuTm8uHwUFBVMuTm8uHwZoPCsABAEAFggfAwUKQ291cnNlQ29kZR8EBQpDb3Vyc2VDb2RlHwUFCkNvdXJzZUNvZGUfBmg8KwAEAQAWCB8DBQZDb3Vyc2UfBAUGQ291cnNlHwUFBkNvdXJzZR8GaDwrAAQBABYIHwMFCEF0dGVtcHQxHwQFCEF0dGVtcHQxHwUFCEF0dGVtcHQxHwZoPCsABAEAFggfAwUIQXR0ZW1wdDIfBAUIQXR0ZW1wdDIfBQUIQXR0ZW1wdDIfBmg8KwAEAQAWCB8DBQhBdHRlbXB0Mx8EBQhBdHRlbXB0Mx8FBQhBdHRlbXB0Mx8GaDwrAAQBABYIHwMFCEF0dGVtcHQ0HwQFCEF0dGVtcHQ0HwUFCEF0dGVtcHQ0HwZoPCsABAEAFggfAwUIQXR0ZW1wdDUfBAUIQXR0ZW1wdDUfBQUIQXR0ZW1wdDUfBmg8KwAEAQAWCB8DBQhBdHRlbXB0Nh8EBQhBdHRlbXB0Nh8FBQhBdHRlbXB0Nh8GaDwrAAQBABYIHwMFCEF0dGVtcHQ3HwQFCEF0dGVtcHQ3HwUFCEF0dGVtcHQ3HwZoPCsABAEAFggfAwUIQXR0ZW1wdDgfBAUIQXR0ZW1wdDgfBQUIQXR0ZW1wdDgfBmg8KwAEAQAWCB8DBQhBdHRlbXB0OR8EBQhBdHRlbXB0OR8FBQhBdHRlbXB0OR8GaDwrAAQBABYIHwMFCUF0dGVtcHQxMB8EBQlBdHRlbXB0MTAfBQUJQXR0ZW1wdDEwHwZoPCsABAEAFggfAwUJQXR0ZW1wdDExHwQFCUF0dGVtcHQxMR8FBQlBdHRlbXB0MTEfBmg8KwAEAQAWCB8DBQlBdHRlbXB0MTIfBAUJQXR0ZW1wdDEyHwUFCUF0dGVtcHQxMh8GaDwrAAQBABYIHwMFB0NyZWRpdHMfBAUHQ3JlZGl0cx8FBQdDcmVkaXRzHwZoPCsABAEAFggfAwUKQWN0Q3JlZGl0cx8EBQpBY3RDcmVkaXRzHwUFCkFjdENyZWRpdHMfBmhkAgMPPCsACwEKFCsAETwrAAQBABYIHwMFBVMuTm8uHwQFBVMuTm8uHwUFBVMuTm8uHwZoPCsABAEAFggfAwUKQ291cnNlQ29kZR8EBQpDb3Vyc2VDb2RlHwUFCkNvdXJzZUNvZGUfBmg8KwAEAQAWCB8DBQZDb3Vyc2UfBAUGQ291cnNlHwUFBkNvdXJzZR8GaDwrAAQBABYIHwMFCEF0dGVtcHQxHwQFCEF0dGVtcHQxHwUFCEF0dGVtcHQxHwZoPCsABAEAFggfAwUIQXR0ZW1wdDIfBAUIQXR0ZW1wdDIfBQUIQXR0ZW1wdDIfBmg8KwAEAQAWCB8DBQhBdHRlbXB0Mx8EBQhBdHRlbXB0Mx8FBQhBdHRlbXB0Mx8GaDwrAAQBABYIHwMFCEF0dGVtcHQ0HwQFCEF0dGVtcHQ0HwUFCEF0dGVtcHQ0HwZoPCsABAEAFggfAwUIQXR0ZW1wdDUfBAUIQXR0ZW1wdDUfBQUIQXR0ZW1wdDUfBmg8KwAEAQAWCB8DBQhBdHRlbXB0Nh8EBQhBdHRlbXB0Nh8FBQhBdHRlbXB0Nh8GaDwrAAQBABYIHwMFCEF0dGVtcHQ3HwQFCEF0dGVtcHQ3HwUFCEF0dGVtcHQ3HwZoPCsABAEAFggfAwUIQXR0ZW1wdDgfBAUIQXR0ZW1wdDgfBQUIQXR0ZW1wdDgfBmg8KwAEAQAWCB8DBQhBdHRlbXB0OR8EBQhBdHRlbXB0OR8FBQhBdHRlbXB0OR8GaDwrAAQBABYIHwMFCUF0dGVtcHQxMB8EBQlBdHRlbXB0MTAfBQUJQXR0ZW1wdDEwHwZoPCsABAEAFggfAwUJQXR0ZW1wdDExHwQFCUF0dGVtcHQxMR8FBQlBdHRlbXB0MTEfBmg8KwAEAQAWCB8DBQlBdHRlbXB0MTIfBAUJQXR0ZW1wdDEyHwUFCUF0dGVtcHQxMh8GaDwrAAQBABYIHwMFB0NyZWRpdHMfBAUHQ3JlZGl0cx8FBQdDcmVkaXRzHwZoPCsABAEAFggfAwUKQWN0Q3JlZGl0cx8EBQpBY3RDcmVkaXRzHwUFCkFjdENyZWRpdHMfBmhkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYCBQ1jdGwwMCRidG5CYWNrBQ9jdGwwMCRidG5Mb2dvdXQ4BbJOqdztfLUbbfRkVsaXIDvdu2EicVPPHHOItgPGCg==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="77940D37" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAB9/QBagdnjL0b+1MaCeq30pPsyKhdavx+AciqUhrYDSxptHBelCd+gvDm/As3EuQ0S2s3uEAsM9bq05PW5thOmfgUFlgNU1eucH/1aaMMUqPn2Kyrs4V0NBpfQ4WNKRk65alieJwzYXthGW935FjZ262KJReIz20L3UDY+BGxzggdca3mN8BEZZ5FE81KogYHqZ6LAW9Y52m8VOhGmmJ8quEfYS4dNk/k8VLjCliWeMZ2s10EYAeXFnzhevd50sjj0M+BLVOb8eU7MpfZ8JToryuNkRzZN6iqWTkA26Ue32Rl2osI1VsHvBeGNSYstgKvk0U5YyGGYUZVspvkXbX2/rQTzsZ/gB+alB17c5w1lJw2ORhy/2tEEqNNY6OKt3+eoekV+HdrI3E/jsmLErNBVwLpscAEu3McaorxkKH20JNszQTPfLa7LF5XeXQ+974EHrsFKhlh3rXl+9pppNQPrPebA0G0Ru8gaE92V7hg0UuJx1oTM6sC6pstDnjXrYT+cT8h2JCSCBkS3m3qU1SGvVGbrT8PdhAS4rZNSvnxpKPj8szL7AB/4eOA9GXMzGMqtyHJxCy30jewVjnuPJjsRAnEnbdLUggqiXB0bWTdEPfAepnCRwYBd/WSxgXIvhXeE9yyKIdiNX8zIoUMJyoM/nZR6ZmHexSNhmGFQCAeMLSGjenHxlyx8qo0mt6M/RmnM=" />
+</div>
+            <div class="header">
+                 <table>
+                    <tr>
+                        <td>
+                            
+   
+   
+                        </td>
+                    </tr>                         
+                </table>
+                <table style="width:100%;"> 
+                    <tr>
+                        <td  style="vertical-align:top;width:900px;">
+<img id="ctl00_Image2" src="header.png" style="height:89px;border-width:0px;" />
+
+
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                     <img id="ctl00_ImgStudent" src="StudentPhoto.aspx?StudId=14919&amp;ColCode=PSS" style="height:80px;width:80px;border-width:0px;" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <span id="ctl00_Label15" class="labelColor">HTNo:</span>
+                                                </td>
+                                                <td>
+                                                    <span id="ctl00_lblHTNo" class="form_text">B23IT005</span>                                                                           
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span id="ctl00_Label23" class="labelColor">Name:</span>
+                                                </td>
+                                                <td>
+                                                    <span id="ctl00_lblStudName" class="form_text">MITTAPALLI AKSHAY</span>                                                                                                                                                   
+                                                </td>
+                                            </tr>                                                                                                          
+                                        </table>
+                                        <table>
+                                             <tr>                                                                        
+                                                <td>
+                                                    <span id="ctl00_Label2" class="labelColor">Branch:</span>
+                                                </td>
+                                                <td>
+                                                        <span id="ctl00_lblBranch" class="smalltxt_box">IT</span>                                                                                                                                                   
+                                                </td>
+                                                <td>
+                                                    <span id="ctl00_Label16" class="labelColor">Sem:</span>
+                                                </td>
+                                                <td>
+                                                    <span id="ctl00_lblSem" class="smalltxt_box">IV SEMESTER</span>                                                                                                                                                   
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="vertical-align:top;">
+                            <table>
+                                <tr>
+                                    <td>
+                <input type="image" name="ctl00$btnBack" id="ctl00_btnBack" src="Home.jpg" alt="GoBack" align="middle" style="color:Black;border-width:0px;" />
+
+
+
+                                    </td>
+                                    <td>
+                <input type="image" name="ctl00$btnLogout" id="ctl00_btnLogout" src="StuLogout.jpg" alt="Logout" align="middle" style="border-width:0px;" />
+
+
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                   </tr>
+                </table>
+                <table class="Footer">
+                    <tr>
+                        <td colspan="2">
+                            <span id="ctl00_lblStudentPortal" style="color:White;font-family:Arial;font-size:Larger;"> Student Portal </span>
+                        </td>
+                         
+                    </tr>
+                </table>               
+                <table>                    
+                    <tr>
+                        <td>
+                            <table style="margin-top:10px;width:100%;"> 
+                                <tr>
+                                    <td style="vertical-align:top; width:200px;">
+                                        <div id="ctl00_PanelStudMenus">
+	
+<nav class="vertical">
+    <ul>
+<li><div style="background-color: #f9c903; padding: 10px; margin-bottom: 10px; cursor: default; color: black;"><a id="ctl00_lnkStuInfo" href="javascript:__doPostBack('ctl00$lnkStuInfo','')">Basic Information</a></div></li>
+<li><div style="background-color: #f9c903; padding: 10px; margin-bottom: 10px; cursor: default; color: black;"><a id="ctl00_LinkButton1" class="list" href="javascript:__doPostBack('ctl00$LinkButton1','')">Academic Information</a></div></li>
+<li><div style="background-color: #f9c903; padding: 10px; margin-bottom: 10px; cursor: default; color: black;"><a id="ctl00_lnkTimeTables" class="list" href="javascript:__doPostBack('ctl00$lnkTimeTables','')">Exam Time Tables</a></div></li>
+<li><div style="background-color: #f9c903; padding: 10px; margin-bottom: 10px; cursor: default; color: black;"><a id="ctl00_lnkExtTimeTable" href="javascript:__doPostBack('ctl00$lnkExtTimeTable','')">External Time Table</a></div></li>
+<li><div style="background-color: #f9c903; padding: 10px; margin-bottom: 10px; cursor: default; color: black;"><a id="ctl00_lnkOnlinePayments" class="list" href="javascript:__doPostBack('ctl00$lnkOnlinePayments','')">Online Fee Payments</a></div></li>
+<li><div style="background-color: #f9c903; padding: 10px; margin-bottom: 10px; cursor: default; color: black;"><a id="ctl00_lnkScriptUploading" class="list" href="javascript:__doPostBack('ctl00$lnkScriptUploading','')">Script Uploading</a></div></li>
+<li><div style="background-color: #f9c903; padding: 10px; margin-bottom: 10px; cursor: default; color: black;"><a id="ctl00_LinkButton2" class="list" href="javascript:__doPostBack('ctl00$LinkButton2','')">Marks Details</a></div></li>
+<li><div style="background-color: #f9c903; padding: 10px; margin-bottom: 10px; cursor: default; color: black;"><a id="ctl00_lnkChangePwd" href="javascript:alert('This will update before exams only!')">Change Password</a></div></li>
+<li><div style="background-color: #f9c903; padding: 10px; margin-bottom: 10px; cursor: default; color: black;"><a id="ctl00_lnkDownloads" href="javascript:alert('This will update before exams only!')">Downloads</a></div></li>
+<li><div style="background-color: #f9c903; padding: 10px; margin-bottom: 10px; cursor: default; color: black;"><a id="ctl00_lnkSuggestions" href="javascript:alert('This will update before exams only!')">Suggestions</a></div></li>
+<li><div style="background-color: #f9c903; padding: 10px; margin-bottom: 10px; cursor: default; color: black;"><a id="ctl00_lnkContactUs" href="javascript:alert('This will update before exams only!')">Contact Us</a></div></li>
+
+
+    </ul>
+</nav>
+
+                                        </div>
+</div>
+                                                           	                                                                       
+	                                </td>	
+                                    <td style="vertical-align:top;">                                                                          
+                                        <div style="width:1120px;">
+	
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        
+     <table>
+        <tr>
+            <td>
+                <span id="ctl00_cpStudCorner_lblWarning" class="MessageLabelRed" style="color:Red;font-size:Medium;font-weight:bold;"></span>
+            </td>
+        </tr>                                      
+     </table>
+    <div id="ctl00_cpStudCorner_PanelDueSubjects" style="width:1130px;text-align:left;">
+		
+        <table class="formTableAuto">
+           <tr>       
+                <td>                
+                    <table>
+                        <tr>
+                            <td>
+                                <table style="text-align:center;width:1090px;">
+                                    <tr>
+                                        <td>
+                                            <span id="ctl00_cpStudCorner_Label5" class="MessageLabelRed" style="color:Black;font-size:Medium;font-weight:bold;">Overall Marks</span>
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                    </tr>
+                                </table> 
+                            </td>
+                        </tr>                
+                        <tr>
+                            <td>
+                                <table style="margin-left:270px;">
+                                    <tr>
+                                        <td style="height: 72px;">
+                                             <table align=center width="600px" style="border-top-width: thin; border-left-width: thin; border-left-color: #3399cc; border-bottom-width: thin; border-bottom-color: #3399cc; color: #c00000; border-top-color: #3399cc; background-color: #e7edae; border-right-width: thin; border-right-color: #3399cc;">
+                                                <tr>
+                                                    <td style="border-right: #999999 1px solid; border-top: #999999 1px solid; border-left: #999999 1px solid; border-bottom: #999999 1px solid; height:30px; width:200px; text-align:center; vertical-align:middle;"><span id="ctl00_cpStudCorner_lblMarksCap" style="color:#620000;font-family:arial;font-size:11pt;font-weight:normal;">CGPA:</span></td>
+                                                    <td style="border-right: #999999 1px solid; border-top: #999999 1px solid; border-left: #999999 1px solid; border-bottom: #999999 1px solid; height:30px; width:100px; text-align:center; vertical-align:middle;"><span id="ctl00_cpStudCorner_lblMarks" style="color:Red;font-family:arial;font-size:11pt;font-weight:bold;">6.01</span></td>
+                                                    <td style="border-right: #999999 1px solid; border-top: #999999 1px solid; border-left: #999999 1px solid; border-bottom: #999999 1px solid; height:30px; width:200px; text-align:center; vertical-align:middle;"><span id="ctl00_cpStudCorner_lblPercentCap" style="color:#620000;font-family:arial;font-size:11pt;font-weight:normal;">Percentage :</span></td>
+                                                    <td style="border-right: #999999 1px solid; border-top: #999999 1px solid; border-left: #999999 1px solid; border-bottom: #999999 1px solid; height:30px; width:100px; text-align:center; vertical-align:middle;"><span id="ctl00_cpStudCorner_lblPercent" style="color:Red;font-family:arial;font-size:11pt;font-weight:bold;"></span></td>                
+                                                </tr>                
+                                                <tr>
+                                                    <td style="height: 21px; border-top: #999999 1px solid; border-right: #999999 1px solid; border-left: #999999 1px solid; border-bottom: #999999 1px solid; height:30px; width:200px; text-align:center; vertical-align:middle;"><span id="ctl00_cpStudCorner_lblCreditsCap" style="color:#620000;font-family:arial;font-size:11pt;font-weight:normal;">Credits Obtained</span></td>
+                                                    <td style="height: 21px; border-top: #999999 1px solid; border-right: #999999 1px solid; border-left: #999999 1px solid; border-bottom: #999999 1px solid; height:30px; width:200px; text-align:center; vertical-align:middle;"><span id="ctl00_cpStudCorner_lblCredits" style="color:Red;font-family:arial;font-size:11pt;font-weight:bold;">65.00/65.00</span></td>
+                                                    <td style="height: 21px; border-top: #999999 1px solid; border-right: #999999 1px solid; border-left: #999999 1px solid; border-bottom: #999999 1px solid; height:30px; width:200px; text-align:center; vertical-align:middle;"><span id="ctl00_cpStudCorner_lblDueCap" style="color:#620000;font-family:arial;font-size:11pt;font-weight:normal;">No.of Backlogs:</span></td>
+                                                    <td style="height: 21px; border-top: #999999 1px solid; border-right: #999999 1px solid; border-left: #999999 1px solid; border-bottom: #999999 1px solid; height:30px; width:200px; text-align:center; vertical-align:middle;"><span id="ctl00_cpStudCorner_lblDue" style="color:Red;font-family:arial;font-size:11pt;font-weight:bold;">0/29</span></td>
+                                                </tr>                
+                                                <tr>
+                                                    <td style="height: 21px; border-top: #999999 1px solid; border-right: #999999 1px solid; border-left: #999999 1px solid; border-bottom: #999999 1px solid; height:30px; width:200px; text-align:center; vertical-align:middle;" colspan="4">
+                                                        <span id="ctl00_cpStudCorner_lblGradeDet" style="color:Red;font-family:arial;font-size:6.5pt;font-weight:bold;">*Letter Grade Indicates Grade Points (S - 10.00,  A - 9.00,  B - 8.00,  C - 7.00,  D - 6.00,  P - 4.00,  F - 0.00,  - - 0.)</span>
+                                                    </td>                    
+                                                </tr>                
+                                             </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>                            
+                        </tr>                
+                        <tr>
+                            <td>
+                                <table align = "center">
+                                    <tr>
+                                        <td colspan="4">
+                                            <div id="ctl00_cpStudCorner_pnMarks" class="grid_OverallMarks" style="border-width:1px;border-style:Solid;text-align:left;">
+			
+                                            <table cellspacing="0" rules="all" border="1" style="border-collapse:collapse;">
+				<tr style="color:Black;background-color:#F9C903;">
+					<td>S.No.</td><td>CourseCode</td><td>Course</td><td>Attempt1</td><td>Attempt2</td><td>Attempt3</td><td>Attempt4</td><td>Attempt5</td><td>Attempt6</td><td>Attempt7</td><td>Attempt8</td><td>Attempt9</td><td>Attempt10</td><td>Attempt11</td><td>Attempt12</td><td>Credits</td><td>ActCredits</td>
+				</tr><tr>
+					<td style="width:25px;">&nbsp;</td><td style="width:80px;">&nbsp;</td><td style="color:Blue;font-weight:bold;width:495px;">I SEMESTER</td><td align="center" style="width:45px;">December 2023</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td>
+				</tr><tr>
+					
+					<td style="width:25px;">1</td><td style="width:80px;">U18MH101</td><td style="width:495px;">ENGINEERING MATHEMATICS - I</td><td align="center" style="width:45px;">P</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">4.00</td><td align="center">4.00</td>
+				</tr><tr>
+					<td style="width:25px;">2</td><td style="width:80px;">U18CS102</td><td style="width:495px;">PROGRAMMING FOR PROBLEM SOLVING USING C</td><td align="center" style="width:45px;">P</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">3.00</td><td align="center">3.00</td>
+				</tr><tr>
+					<td style="width:25px;">3</td><td style="width:80px;">U18PH103</td><td style="width:495px;">ENGINEERING PHYSICS</td><td align="center" style="width:45px;">D</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">4.00</td><td align="center">4.00</td>
+				</tr><tr>
+					<td style="width:25px;">4</td><td style="width:80px;">U18MH104</td><td style="width:495px;">ENGLISH FOR COMMUNICATION</td><td align="center" style="width:45px;">B</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">3.00</td><td align="center">3.00</td>
+				</tr><tr>
+					<td style="width:25px;">5</td><td style="width:80px;">U18EE105</td><td style="width:495px;">BASIC ELECTRICAL ENGINEERING</td><td align="center" style="width:45px;">D</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">4.00</td><td align="center">4.00</td>
+				</tr><tr>
+					<td style="width:25px;">6</td><td style="width:80px;">U18EE106</td><td style="width:495px;">BASIC ELECTRICAL ENGINEERING LABORATORY</td><td align="center" style="width:45px;">B</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">1.00</td><td align="center">1.00</td>
+				</tr><tr>
+					<td style="width:25px;">7</td><td style="width:80px;">U18CS107</td><td style="width:495px;">PROGRAMMING FOR PROBLEM SOLVING USING C LABORATORY</td><td align="center" style="width:45px;">B</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">1.00</td><td align="center">1.00</td>
+				</tr><tr>
+					<td style="width:25px;">8</td><td style="width:80px;">U18PH108</td><td style="width:495px;">ENGINEERING PHYSICS LABORATORY</td><td align="center" style="width:45px;">B</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">1.00</td><td align="center">1.00</td>
+				</tr><tr>
+					<td style="width:25px;">9</td><td style="width:80px;">U18ME109</td><td style="width:495px;">WORKSHOP PRACTICE</td><td align="center" style="width:45px;">C</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">1.00</td><td align="center">1.00</td>
+				</tr><tr>
+					<td style="width:25px;">10</td><td style="width:80px;">U18EA110</td><td style="width:495px;">EAA SPORTS YOGA NSS</td><td align="center" style="width:45px;">B</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">0.00</td><td align="center">0.00</td>
+				</tr><tr style="color:#620000;background-color:#E7EDAE;font-family:Arial;">
+					<td style="font-size:9pt;font-weight:bold;">&nbsp;</td><td style="font-size:9pt;font-weight:bold;">&nbsp;</td><td style="font-size:9pt;font-weight:bold;">SGPA: 5.95 CGPA:5.95</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">22.00</td><td align="center" style="font-size:9pt;font-weight:bold;">22.00</td>
+				</tr><tr style="color:#620000;background-color:#E7EDAE;font-family:Arial;">
+					<td style="font-size:9pt;font-weight:bold;">&nbsp;</td><td style="font-size:9pt;font-weight:bold;">&nbsp;</td><td style="font-size:9pt;font-weight:bold;">Courses Passed:10</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td>
+				</tr>
+			</table><table cellspacing="0" rules="all" border="1" style="border-collapse:collapse;">
+				<tr style="color:Black;background-color:#F9C903;">
+					<td>S.No.</td><td>CourseCode</td><td>Course</td><td>Attempt1</td><td>Attempt2</td><td>Attempt3</td><td>Attempt4</td><td>Attempt5</td><td>Attempt6</td><td>Attempt7</td><td>Attempt8</td><td>Attempt9</td><td>Attempt10</td><td>Attempt11</td><td>Attempt12</td><td>Credits</td><td>ActCredits</td>
+				</tr><tr>
+					<td style="width:25px;">&nbsp;</td><td style="width:80px;">&nbsp;</td><td style="color:Blue;font-weight:bold;width:495px;">II SEMESTER</td><td align="center" style="width:45px;">May 2024</td><td align="center" style="width:45px;">November 2024</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td>
+				</tr><tr style="background-color:#FFFFFF;">
+					<td style="width:25px;">1</td><td style="width:80px;">U18MH201</td><td style="width:495px;">ENGINEERING MATHEMATICS - II</td><td align="center" style="width:45px;">F</td><td align="center" style="width:45px;">D</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">4.00</td><td align="center">4.00</td>
+
+				</tr><tr style="background-color:#FFFFFF;">
+					<td style="width:25px;">2</td><td style="width:80px;">U18CS202R1</td><td style="width:495px;">DATA STRUCTURES THROUGH C</td><td align="center" style="width:45px;">F</td><td align="center" style="width:45px;">D</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">3.00</td><td align="center">3.00</td>
+				</tr><tr>
+					<td style="width:25px;">3</td><td style="width:80px;">U18CH203</td><td style="width:495px;">ENGINEERING CHEMISTRY</td><td align="center" style="width:45px;">P</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">4.00</td><td align="center">4.00</td>
+				</tr><tr>
+					<td style="width:25px;">4</td><td style="width:80px;">U18ME204</td><td style="width:495px;">ENGINEERING DRAWING </td><td align="center" style="width:45px;">P</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">4.00</td><td align="center">4.00</td>
+				</tr><tr>
+					<td style="width:25px;">5</td><td style="width:80px;">U18CE205</td><td style="width:495px;">ENGINEERING MECHANICS</td><td align="center" style="width:45px;">P</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">4.00</td><td align="center">4.00</td>
+				</tr><tr>
+					<td style="width:25px;">6</td><td style="width:80px;">U18CS207R1</td><td style="width:495px;">DATA STRUCTURES THROUGH C LABORATORY</td><td align="center" style="width:45px;">A</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">1.00</td><td align="center">1.00</td>
+				</tr><tr>
+					<td style="width:25px;">7</td><td style="width:80px;">U18CH208</td><td style="width:495px;">ENGINEERING CHEMISTRY LABORATORY</td><td align="center" style="width:45px;">B</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">1.00</td><td align="center">1.00</td>
+				</tr><tr>
+					<td style="width:25px;">8</td><td style="width:80px;">U18CH209</td><td style="width:495px;">ENVIRONMENTAL STUDIES </td><td align="center" style="width:45px;">D</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">0.00</td><td align="center">0.00</td>
+				</tr><tr>
+					<td style="width:25px;">9</td><td style="width:80px;">U18EA210</td><td style="width:495px;">EAA: SPORTS / YOGA / NSS</td><td align="center" style="width:45px;">B</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">0.00</td><td align="center">0.00</td>
+				</tr><tr style="color:#620000;background-color:#E7EDAE;font-family:Arial;">
+					<td style="font-size:9pt;font-weight:bold;">&nbsp;</td><td style="font-size:9pt;font-weight:bold;">&nbsp;</td><td style="font-size:9pt;font-weight:bold;">SGPA: 5.09 CGPA:5.52</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">21.00</td><td align="center" style="font-size:9pt;font-weight:bold;">21.00</td>
+				</tr><tr style="color:#620000;background-color:#E7EDAE;font-family:Arial;">
+					<td style="font-size:9pt;font-weight:bold;">&nbsp;</td><td style="font-size:9pt;font-weight:bold;">&nbsp;</td><td style="font-size:9pt;font-weight:bold;">Courses Passed:9 </td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td>
+				</tr>
+			</table><table cellspacing="0" rules="all" border="1" style="border-collapse:collapse;">
+				<tr style="color:Black;background-color:#F9C903;">
+					<td>S.No.</td><td>CourseCode</td><td>Course</td><td>Attempt1</td><td>Attempt2</td><td>Attempt3</td><td>Attempt4</td><td>Attempt5</td><td>Attempt6</td><td>Attempt7</td><td>Attempt8</td><td>Attempt9</td><td>Attempt10</td><td>Attempt11</td><td>Attempt12</td><td>Credits</td><td>ActCredits</td>
+				</tr><tr>
+					<td style="width:25px;">&nbsp;</td><td style="width:80px;">&nbsp;</td><td style="color:Blue;font-weight:bold;width:495px;">III SEMESTER</td><td align="center" style="width:45px;">November 2024</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td>
+				</tr><tr style="background-color:#FFFFFF;">
+					<td style="width:25px;">1</td><td style="width:80px;">U18MH301</td><td style="width:495px;">ENGINEERING MATHEMATICS - III</td><td align="center" style="width:45px;">D</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">4.00</td><td align="center">4.00</td>
+
+				</tr><tr>
+					<td style="width:25px;">2</td><td style="width:80px;">U18MH302</td><td style="width:495px;">PROFESSIONAL ENGLISH</td><td align="center" style="width:45px;">S</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">1.00</td><td align="center">1.00</td>
+				</tr><tr>
+					<td style="width:25px;">3</td><td style="width:80px;">U18IT303R22</td><td style="width:495px;">ADVANCED DATA STRUCTURES</td><td align="center" style="width:45px;">D</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">3.00</td><td align="center">3.00</td>
+				</tr><tr style="background-color:#FFFFFF;">
+					<td style="width:25px;">4</td><td style="width:80px;">U18MH304</td><td style="width:495px;">DISCRETE MATHEMATICS</td><td align="center" style="width:45px;">D</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">3.00</td><td align="center">3.00</td>
+				</tr><tr>
+					<td style="width:25px;">5</td><td style="width:80px;">U18IT305</td><td style="width:495px;">COMPUTER ARCHITECTURE AND ORGANIZATION</td><td align="center" style="width:45px;">C</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">3.00</td><td align="center">3.00</td>
+				</tr><tr style="background-color:#FFFFFF;">
+					<td style="width:25px;">6</td><td style="width:80px;">U18EC306</td><td style="width:495px;">SWITCHING THEORY AND LOGIC DESIGN</td><td align="center" style="width:45px;">B</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">3.00</td><td align="center">3.00</td>
+				</tr><tr>
+					<td style="width:25px;">7</td><td style="width:80px;">U18IT307</td><td style="width:495px;">OPERATING SYSTEMS</td><td align="center" style="width:45px;">D</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">3.00</td><td align="center">3.00</td>
+				</tr><tr>
+					<td style="width:25px;">8</td><td style="width:80px;">U18IT308R22</td><td style="width:495px;">ADVANCED DATA STRUCTURES LABORATORY</td><td align="center" style="width:45px;">C</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">1.00</td><td align="center">1.00</td>
+				</tr><tr>
+					<td style="width:25px;">9</td><td style="width:80px;">U18IT309</td><td style="width:495px;">OPERATING SYSTEMS LABORATORY</td><td align="center" style="width:45px;">B</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">1.00</td><td align="center">1.00</td>
+				</tr><tr>
+					<td style="width:25px;">10</td><td style="width:80px;">U18MH315</td><td style="width:495px;">ESSENCE OF INDIAN TRADITIONAL KNOWLEDGE*</td><td align="center" style="width:45px;">D</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">0.00</td><td align="center">0.00</td>
+				</tr><tr style="color:#620000;background-color:#E7EDAE;font-family:Arial;">
+					<td style="font-size:9pt;font-weight:bold;">&nbsp;</td><td style="font-size:9pt;font-weight:bold;">&nbsp;</td><td style="font-size:9pt;font-weight:bold;">SGPA: 7.00 CGPA:6.01</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">22.00</td><td align="center" style="font-size:9pt;font-weight:bold;">22.00</td>
+				</tr><tr style="color:#620000;background-color:#E7EDAE;font-family:Arial;">
+					<td style="font-size:9pt;font-weight:bold;">&nbsp;</td><td style="font-size:9pt;font-weight:bold;">&nbsp;</td><td style="font-size:9pt;font-weight:bold;">Courses Passed:10 </td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td>
+				</tr>
+			</table>
+			<table cellspacing="0" rules="all" border="1" style="border-collapse:collapse; margin-top: 20px;">
+				<tr style="color:Black;background-color:#F9C903;">
+					<td>S.No.</td><td>CourseCode</td><td>Course</td><td>Attempt1</td><td>Attempt2</td><td>Attempt3</td><td>Attempt4</td><td>Attempt5</td><td>Attempt6</td><td>Attempt7</td><td>Attempt8</td><td>Attempt9</td><td>Attempt10</td><td>Attempt11</td><td>Attempt12</td><td>Credits</td><td>ActCredits</td>
+				</tr><tr>
+					<td style="width:25px;">&nbsp;</td><td style="width:80px;">&nbsp;</td><td style="color:Blue;font-weight:bold;width:495px;">IV SEMESTER</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="center">&nbsp;</td>
+				</tr><tr>
+					<td style="width:25px;">1</td><td style="width:80px;">U18OE401A</td><td style="width:495px;">APPLICABLE MATHEMATICS</td><td align="center" style="width:45px;">B</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">4.00</td><td align="center">4.00</td>
+				</tr><tr>
+					<td style="width:25px;">2</td><td style="width:80px;">U18TP402</td><td style="width:495px;">SOFT AND INTERPERSONAL SKILLS</td><td align="center" style="width:45px;">C</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">1.00</td><td align="center">1.00</td>
+				</tr><tr>
+					<td style="width:25px;">3</td><td style="width:80px;">U18OE403E</td><td style="width:495px;">MICROPROCESSORS</td><td align="center" style="width:45px;">C</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">3.00</td><td align="center">3.00</td>
+				</tr><tr>
+					<td style="width:25px;">4</td><td style="width:80px;">U18IT404</td><td style="width:495px;">THEORY OF COMPUTATION</td><td align="center" style="width:45px;">C</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">3.00</td><td align="center">3.00</td>
+				</tr><tr>
+					<td style="width:25px;">5</td><td style="width:80px;">U18IT405</td><td style="width:495px;">DATABASE MANAGEMENT SYSTEMS</td><td align="center" style="width:45px;">B</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">4.00</td><td align="center">4.00</td>
+				</tr><tr>
+					<td style="width:25px;">6</td><td style="width:80px;">U18IT406</td><td style="width:495px;">JAVA PROGRAMMING</td><td align="center" style="width:45px;">B</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">3.00</td><td align="center">3.00</td>
+				</tr><tr>
+					<td style="width:25px;">7</td><td style="width:80px;">U18IT407</td><td style="width:495px;">JAVA PROGRAMMING LABORATORY</td><td align="center" style="width:45px;">C</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">1.00</td><td align="center">1.00</td>
+				</tr><tr>
+					<td style="width:25px;">8</td><td style="width:80px;">U18IT408</td><td style="width:495px;">DATABASE MANAGEMENT SYSTEMS LABORATORY</td><td align="center" style="width:45px;">B</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">1.00</td><td align="center">1.00</td>
+				</tr><tr>
+					<td style="width:25px;">9</td><td style="width:80px;">U18OE411E</td><td style="width:495px;">MICROPROCESSORS LABORATORY</td><td align="center" style="width:45px;">A</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:45px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:100px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center" style="width:70px;">&nbsp;</td><td align="center" style="width:50px;">&nbsp;</td><td align="center">&nbsp;</td><td align="center">1.00</td><td align="center">1.00</td>
+				</tr><tr style="color:#620000;background-color:#E7EDAE;font-family:Arial;">
+					<td style="font-size:9pt;font-weight:bold;">&nbsp;</td><td style="font-size:9pt;font-weight:bold;">&nbsp;</td><td style="font-size:9pt;font-weight:bold;">SGPA: 7.67 CGPA:6.42</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">21.00</td><td align="center" style="font-size:9pt;font-weight:bold;">21.00</td>
+				</tr><tr style="color:#620000;background-color:#E7EDAE;font-family:Arial;">
+					<td style="font-size:9pt;font-weight:bold;">&nbsp;</td><td style="font-size:9pt;font-weight:bold;">&nbsp;</td><td style="font-size:9pt;font-weight:bold;">Courses Passed:9</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td><td align="center" style="font-size:9pt;font-weight:bold;">&nbsp;</td>
+				</tr>
+	</table> 
+  
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        
+</div>
+                                    </td>                    
+                                </tr>
+                            </table>
+                         </td> 
+                    </tr>
+		        </table>	
+            </div>
+   </form>
+     <script type="text/javascript">
+         document.onmousedown = disableRightclick;
+         var message = "Sorry ! Right Click No Access.";
+         function disableRightclick(evt) {
+             if (evt.button == 2) {
+                 alert(message);
+                 return false;
+             }
+         }
+    </script>
+
+</body>
+</html>

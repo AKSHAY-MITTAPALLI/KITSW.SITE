@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KITSW Examination Portal</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+        }
+        .header {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+        .header img {
+            width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .header h1 {
+            color: black;
+            font-size: 22px;
+            margin-top: 5px;
+        }
+        .login-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .login-container h2 {
+            text-align: center;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-button:hover {
+            background-color: #0056b3;
+        }
+        #message {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="image.png" alt="KITSW Header">
+        <h1>Examination Portal</h1>
+    </div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form onsubmit="handleLogin(); return false;">
+            <label for="rollNumber">Roll Number</label>
+            <input type="text" id="rollNumber" class="input-field" placeholder="Roll Number" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" class="input-field" placeholder="Password" required>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script>
+        function handleLogin() {
+            var rollNumber = document.getElementById('rollNumber').value;
+            var password = document.getElementById('password').value;
+            var message = document.getElementById('message');
+
+            // Define valid credentials
+            var validCredentials = {
+                "B23IT005": "366301122006"
+            };
+
+            // Check if the entered credentials are valid
+            if (validCredentials[rollNumber] && validCredentials[rollNumber] === password) {
+                alert("Login successful!");
+                window.location.href = "dashboard.html";
+            } else {
+                message.textContent = "Invalid roll number or password.";
+            }
+        }
+    </script>
+</body>
+</html>

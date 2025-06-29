@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Red Page</title>
+    <style>
+        body {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding-top: 20%;
+            font-size: 2em;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    FileZilla is Working!
+</body>
+</html>

@@ -1,0 +1,1346 @@
+  
+.formTableAuto
+{
+    width:auto;
+    align-self:flex-start;
+    height:auto;
+    font-family:Arial,arial;
+    border:none; /* Changed from ridge to none */
+}
+
+
+.formlabel10_td
+{
+	width: 250px;
+	height: 18px;
+    font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;		
+}
+.formlabelbig
+{
+	width: 300px;
+    font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;		
+}
+
+.formlabel_td
+{
+	width: 180px;
+	height: 18px;
+	font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;		
+}
+.formlabel3_td
+{
+	width: 165px;
+	height: 18px;
+	font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;		
+}
+.formlabel8_td
+{
+	width: 120px;
+	height: 18px;
+	font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;		
+}
+
+.formlabel1_td
+{
+	width: 100px;
+	height: 18px;
+	font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;		
+}
+.formlabel1_Button
+{
+	width: 80px;
+	height: 18px;
+	font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;
+    text-align:center ;		
+}
+.formAdmin_td
+{
+	width: 140px;
+	height: 18px;
+    font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;		
+}
+.formlabelPayField
+{
+	width: 200px;
+	height: 18px;
+    font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;		
+}
+
+.formlabel2_td
+{
+	width: 50px;
+	height: 18px;
+	font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;	
+}
+
+.formlabel11_td
+{
+	width: 70px;
+	height: 18px;
+	font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;		
+}
+.formlabelSmall_td
+{
+	width: 60px;
+	font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;		
+}
+.formlabelHead_td
+{
+	width: 250px;
+	height: 18px;
+	font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;		
+} 
+              /*  ...............textboxes and Dropdowns .....................*/
+  .form_RouteMaster
+{
+      width:400px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+}
+.form_Course
+{
+    width:350px;
+    color:#000;
+    font-family:Arial,arial;
+     font-size: 12px;
+}
+
+.smalltxt_box
+{
+    width: 200px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+}
+.TextBox
+{
+    width: 100px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+}
+.TextBoxGrid
+{
+    width: 100px;
+    padding : 3Px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+}
+.form_OnlineTest
+{
+    width:200px;
+    height:20px;
+    color:#000;
+    font-family:Arial,arial;
+     font-size: 12px;
+}
+.smallCombo_box
+{
+    width: 150px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+}
+
+.bigCombo_box
+{
+    width: 300px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+}
+
+.smalltxt_box1
+{
+    width: 100px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+
+}
+.form_txt_Medium
+{
+    width:200px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+}
+.Medium_Txt_Box
+{
+    width:130px;
+    height:20px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+}
+.smalltxt_box2
+{
+    width: 80px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+
+}
+.SmallReEval
+{
+    width: 70px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+
+}
+.smalltxt_box3
+{
+    width: 60px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+
+}
+.ObjectiveTest
+{
+    width: 150px;
+    height:20px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+}
+.Medium_Box
+{
+    width:150px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+}
+
+.form_text
+{
+    width:265px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+}
+.formcombo_Time
+{
+    width: 45px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+}
+  .form_RouteFaculty
+{
+    width:350px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+}
+  .smalltxt_boxLoan
+{
+    width: 80px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+}
+   .form_Narration
+{
+    width:380px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+}
+ .form_NarrationSupply
+{
+    width:430px;
+    color:#000;
+    font-family:Arial,arial;
+    font-size: 12px;
+}
+         /* ............ list and button and radio buttons ...................... */
+
+.listbox_Bus
+{
+    width:300px;
+    height:335px;
+    font-family:Arial,arial;
+    font-size: 12px;
+    padding-bottom:100px;
+    border:none;
+}
+
+.listbox_admin_Test
+{
+    width:300px;
+    height:150px;
+    font-family:Arial,arial;
+    font-size: 12px;
+    padding-bottom:100px;
+    border:none;
+}
+.radiobuttonBig
+{
+    width: 350px;
+    height: 21px;
+    font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;
+
+}
+  .buttonsShow
+{
+    width:50px;
+    color:#000;
+    background-color:#f9c903;
+    text-align:center;
+    font-size: 12px;
+    font-family:Arial,arial;
+}
+  .ButtonDelete
+{
+    width:50px;
+    color:#040404;
+    background-color:#f9c903;
+    text-align:center;
+    font-size:10px;
+    font-family:Arial,arial;
+}
+
+  .buttonscenter
+{
+     width:100px;
+     color:#040404;
+     background-color:#f9c903;
+     text-align:center;
+     font-size: 12px;
+     font-family:Arial,arial;
+}
+.ShowGridData
+{
+    width:90px;
+    color:#000;
+    background-color:#f9c903;
+    text-align:center;
+    font-size: 12px;
+    font-family:Arial,arial;
+}
+  
+.ShowTestData
+{
+    width:100px;
+    color:#000;
+    background-color:#f9c903;
+    text-align:center;
+    font-size: 12px;
+    font-family:Arial,arial;
+}
+.ShowSubmit
+{
+    width:150px;
+    color:#000;
+    background-color:#f9c903;
+    text-align:center;
+    font-size: 12px;
+    font-family:Arial,arial;
+}
+ .SubmitPassword 
+{
+    color: #fff;
+    background-color: #800080;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    font-family:arial;
+}
+
+.CheckHostelUser
+{
+    width:80px;
+    font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;
+  
+}
+.CheckOnlineUser
+{
+    width:70px;
+    font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;
+  
+}
+.checkbox
+{
+    width:100px;
+    height:100px;
+    font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;
+}
+
+.checkboxBig
+{
+	width: 180px;
+	height: 18px;
+	font-family:Arial,arial;
+    font-size: 12px;
+  	color: #040404;
+	padding: 3px 0px 0px 5px;		
+    white-space :normal;
+}
+  .datepicker
+{
+           margin-top:0px;
+}
+
+ .image_box
+{
+    height:100px;
+    width:100px;
+    margin-left:35px;
+}
+
+  .MessageLabel
+{
+    color:#ff0000;
+    font-family:arial;
+    font-size: 12px;
+}
+
+ .MessageLabelBlue
+{
+    color:#ff0000;
+    font-family:arial;
+    font-size: 12px;
+    width:450px;
+}
+ .MessageLabelRed
+{
+    color:#ff0000;
+    font-family:arial;
+    font-size: 12px;
+    width:150px;
+}
+  .MessageDisplayLabel
+{
+    color:#f605db;
+   font-family:arial ;
+    font-size:15px;
+    margin-left:150px;
+
+}
+ .PanelCurriculum
+  {
+    border: solid 1px #c3bbbf;
+    width:200px;
+    height:70px; 
+    overflow-y:scroll;
+    background-color:#ffffff;
+    font-size: 12px;
+    font-family:Arial,arial;
+    color:#000000;
+
+ }  
+  .CheckListBranch
+  {
+    border: solid 1px #c3bbbf;
+    width:380px;
+    height:90px; 
+    overflow-y:scroll;
+    background-color:#ffffff;
+    font-size: 12px;
+    font-family:Arial,arial;
+    color:#000000;
+
+ }  
+    .CheckListBranchQB
+  {
+    border: solid 1px #c3bbbf;
+    width:280px;
+    height:90px; 
+    overflow-y:scroll;
+    background-color:#ffffff;
+    font-size: 12px;
+    font-family:Arial,arial;
+    color:#000000;
+
+ } 
+
+
+
+.ClearResponse
+{
+    width:120px;
+    color:#000;
+    background-color:#f9c903;
+    text-align:center;
+    font-size: 12px;
+    font-family:Arial,arial;
+}
+  
+ .BiometricButtons
+{
+    width:200px;
+    color:#000;
+    background-color:#f9c903;
+    text-align:center;
+    font-size: 12px;
+    font-family:Arial,arial;
+
+}
+ .AssignmentButtons
+{
+    width:250px;
+    color:#000;
+    background-color:#f9c903;
+    text-align:center;
+    font-size: 12px;
+    font-family:Arial,arial;
+
+}
+
+ .CreateLogins
+{
+    width:120px;
+    color:#000;
+    background-color:#f9c903;
+    text-align:center;
+    font-size: 12px;
+    font-family:Arial,arial;
+}
+ .ImportQuestionBank
+{
+    width:200px;
+    color:#000;
+    background-color:#f9c903;
+    text-align:center;
+    font-size: 12px;
+    font-family:Arial,arial;
+}
+ 
+.SerchImage
+{
+   
+  background-image:url(../images/Search.png);
+    text-align:center;
+    font-size: 12px;
+    font-family:Arial,arial;
+    width:29px;
+    height:26px;
+}
+
+.FinalSubmit
+ {
+    color: #000;
+    background-color: #67d8dc;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    font-family: 'Futura Bk BT';
+    height:30px;
+    font-weight:bold;
+     font-size: 12px;
+}
+.FinalSubmit:hover
+ {
+	background-color:#f0b2f2;  
+ }
+.ClearResponse 
+{
+    color: #000;
+    background-color: #67d8dc;
+    border: none;
+    border-radius: 5px;
+    width: 110px;
+    font-family: 'Futura Bk BT';
+    height:30px;
+}
+.ClearResponse:hover
+ {
+	background-color:#f0b2f2;  
+ }
+.Previous 
+{
+    color: #000;
+    background-color: #67d8dc;
+    border: none;
+    border-radius: 5px;
+    width: 70px;
+    font-family: 'Futura Bk BT';
+    height:30px;
+    font-size: 12px;
+}
+.Previous:hover
+ {
+	background-color:#f0b2f2;  
+ }
+
+.StartTest
+{
+    color: #000;
+    background-color: #67d8dc;
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    font-family: 'Futura Bk BT';
+    height:30px;
+    font-weight:bold;
+     font-size: 12px;
+}
+.StartTest:hover
+ {
+	background-color:#f0b2f2;  
+ }
+
+.View
+{
+    color: #000;
+    background-color: #67d8dc;
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    font-family: 'Futura Bk BT';
+    height:30px;
+    font-weight:bold;
+     font-size: 12px;
+}
+.View:hover
+ {
+	background-color:#f0b2f2;  
+ }
+
+
+
+.FixedHeader {
+    position:static;
+    /*position:absolute;*/
+}  
+
+    /* ...................... grid views ..................................... */
+  
+ .gridQuestionSubMap
+{
+        margin-left: 0px;
+        width:700px;
+        height:330px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+.gridScheduling
+{
+        margin-left: 0px;
+        width:1000px;
+        height:320px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+ 
+.gridTestResult
+{
+        margin-left: 15px;
+        width: 400px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        align-content:center;
+        margin-left:-1px;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+ .grdBuildingDetailsBig
+{
+        margin-left: 0px;
+        width: 400px;
+        height:300px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+ .gridAutoMenus
+{
+        margin-left: 0px;
+        width: auto;
+        height:auto;
+        margin-bottom: 0px;
+        vertical-align:top;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+    .grdPromo2
+{
+        margin-left: 0px;
+        width: 430px;
+        height:150px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+.gridSub
+{
+        margin-left: 15px;
+        width:1090px;
+        height:300px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        align-content:center;
+        margin-left:-1px;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+    .gridHourMast
+{
+        margin-left: 15px;
+        width: 400px;
+        height:460px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        margin-left:-1px;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+   .gridStuHostelReg
+{
+        margin-left: 0px;
+        width:670px;
+        height:450px;
+        margin-bottom:-10px;
+        vertical-align:top;
+        font-family:Arial,arial;
+        font-size: 6px;
+        color:black;
+}
+   .grid_PayStructure
+{
+        margin-left: 15px;
+        width:1080px;
+        height:350px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        align-content:center;
+        margin-left:-1px;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+.grid_Faculty
+{
+        margin-left: 15px;
+        width:1080px;
+        height:400px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        align-content:center;
+        margin-left:-1px;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+.grid_DamageGoods
+{
+        margin-left: 15px;
+        width:1000px;
+        height:350px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        align-content:center;
+        margin-left:-1px;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+.grid_IntMarksDisplay
+{
+        
+        width: Auto;
+        height:350px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        align-content:center;
+        margin-left:-1px;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+        margin-left:700px;
+        margin-top:-389px;
+}
+
+.grid_IntMarksDisplay1 {
+    margin-left: 15px;
+    width:58%;
+    height: 1200px;
+    margin-bottom: 0px;
+    vertical-align: top;
+    align-content: center;
+    margin-left: 358px;
+    font-family: Arial,arial;
+    font-size: 12px;
+    color: black;
+    margin-top: -20px;
+}
+
+
+.button{
+    margin-left:500px;
+    margin-top:-350px;
+
+}
+.button1{
+    margin-left:538px;
+    margin-top:-18px;
+}
+
+
+
+
+.grid_OverallMarks
+{
+        margin-left: 15px;
+        width:auto;
+        height:auto;
+        margin-bottom: 0px;
+        vertical-align:top;
+        align-content:center;
+        margin-left:-1px;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+.gridTransDetls
+{
+        margin-left: 0px;
+        width: 650px;
+        height:400px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+ .gridNotifAdminPayroll
+{
+        margin-left: 0px;
+        width: 430px;
+        height:110px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+  .gridDueSemWise
+{
+        margin-left: 0px;
+        width: 500px;
+        height:180px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+   .grid_SmallAddFee
+{
+        margin-left: 0px;
+        width: 490px;
+        height:125px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+ .gridReVal
+{
+        margin-left: 15px;
+        width: 680px;
+        height:230px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        margin-left:-1px;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+
+  .gridAllDueDet
+{
+        margin-left: 15px;
+        width: 580px;
+        height:280px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        margin-left:-1px;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+  .gridHostel
+{
+        margin-left: 0px;
+        width: 400px;
+        height:1450px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+   .grid_HosUser
+{
+        margin-left: 15px;
+        width:600px;
+        height:auto;
+        margin-bottom: 0px;
+        vertical-align:top;
+        margin-left:-1px;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+    .gridStuAssignment
+{
+        margin-left: 15px;
+        width: 530px;
+        height:330px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        margin-left:-1px;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+     .gridStaffAssignment
+{
+        margin-left: 15px;
+        width: 530px;
+        height:200px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        margin-left:-1px;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+     .grdStuMaster
+{
+        margin-left: 0px;
+        width: 550px;
+        height:2410px;
+        margin-bottom: 0px;
+        vertical-align:top;
+        font-family:Arial,arial;
+        font-size: 12px;
+        color:black;
+}
+
+    /* ...................... Field Sets ..................................... */
+
+  .fieldsetAutoUsers
+{
+	border: 1px solid #f9c903;
+	width: auto;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+    color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;
+}	
+      
+
+.fieldsetAutoMenus
+{
+	border: 1px solid #f9c903;
+	width: auto;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+    color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;
+}	
+       
+
+.fieldsetQuestionSubMap
+{
+	border: 1px solid #f9c903;
+	width: 700px;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+    color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;
+}	
+        
+ .fieldsetTrans
+{
+	border: 1px solid #f9c903;
+	width: 420px;
+    height:auto;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;  
+    color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial; 
+}	
+        
+.fieldsetAssign
+{
+	border: 1px solid #f9c903;
+	width: 420px;
+    height:auto;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px; 
+    color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;  
+}	
+        
+.fieldsetclassSingleSub
+{
+	border: 1px solid #f9c903;
+	width: 500px;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: -4px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px; 
+    color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial; 
+}	
+       
+  .fieldsetAllDueDet
+{
+	border: 1px solid #f9c903;
+	width: 580px;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: 13px;
+	padding-left: 0px;
+	padding-right: 0px;
+    margin-left:0px;
+    color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;
+}	
+        
+
+ .fieldsetTransLayout
+{
+	border: 1px solid #f9c903;
+	width: 500px;
+	padding-top: 0px;
+	float: left;
+	margin-bottom:0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+    color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;  
+}	
+       
+
+
+.fieldsetQuestionTest
+{
+	border: 1px solid #f9c903;
+	width: 700px;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+    color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;
+}	
+       
+
+
+.fieldsetScheduling
+{
+	border: 1px solid #f9c903;
+	width: 1000px;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+    color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;
+}	
+     
+
+.fieldsetQuestionCourseMap
+{
+	border: 1px solid #f9c903;
+	width: 700px;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+    color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;
+}	
+  
+
+ .fieldsetAdminTest
+{
+	border: 1px solid #f9c903;
+	width: 300px;
+	padding-top: -1px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+    margin-top:0px;
+    color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;
+}	
+  
+     
+ .fieldsetTestResult
+{
+	border: 1px solid #f9c903;
+	width: 400px;
+	padding-top: -1px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+    margin-top:0px;
+        color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;
+}	
+   
+
+.fieldsetQualfAdmin
+{
+	border: 1px solid #f9c903;
+	width:300px;
+	padding-top: -1px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+        color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;
+}
+   
+ .fieldsetSubjectSetup
+{
+	border: 1px solid #f9c903;
+	width: 420px;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+        color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;
+}	
+    
+  
+
+  .fieldsetRegistredStuGrid
+{
+	border: 1px solid #f9c903;
+	width: 480px;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+        color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;
+}	
+   
+
+
+.fieldsetSubMas
+{
+	border: 1px solid #f9c903;
+	width: 1090px;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+        color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;
+} 
+   
+
+
+.fieldsetCourseMaster
+{
+	border: 1px solid #f9c903;
+	width: 172px;
+    height:70px;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+        color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;
+}	
+    
+
+.fieldsetSubExam
+{
+	border: 1px solid #f9c903;
+	width: 172px;
+    height:70px;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+        color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;
+}	
+    
+
+.fieldsetSubOptional
+{
+	border: 1px solid #f9c903;
+	width: 172px;
+    height:70px;
+	padding-top: 0px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+        color:#cb04a3; 
+    font-size:12px;
+    font-family :Arial;
+}	
+    
+
+.lnkButtonsCell
+{
+    height: 20px;
+    width:30px;
+    background-color:#ff0000;
+    text-align:center;
+    color:#040404;
+    font-weight:bold;
+    font-family:arial;
+    font-size:13px;
+    text-decoration :none;
+}
+        
+    .lnkButtons
+{
+    height: 20px;
+    width:30px;
+    background-color:none;
+    text-align:center;
+    color:#040404;
+    font-weight:bold;
+    font-family:arial;
+    font-size:13px;
+    text-decoration :none;
+           
+}

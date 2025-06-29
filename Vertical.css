@@ -1,0 +1,117 @@
+*
+{
+    padding:0;margin:0;
+
+}
+body
+{
+    font-size:14px;
+    font-family:Arial,arial; 
+    color: #020202;        
+}
+
+
+/*VERTICAL MENU*/
+nav.vertical
+{
+  position:relative;
+  width:200px;
+  /*display: block;*/
+  background:#f9c903;
+  color: #020202;   
+}
+
+/* ALL UL */
+nav.vertical ul
+{
+  list-style: none;
+  /*background-color: #97c700;*/  
+  background-color: #f9c903; 
+  color: #020202;
+   font-weight:bold;      
+}
+/* ALL LI */
+nav.vertical li
+{
+  position:relative;
+   box-decoration-break:clone ;
+   color: #020202;
+   border:1px solid white;
+}
+/* ALL A */
+nav.vertical a
+{
+  display:block;
+  color: #020202;
+  text-decoration:none;
+  padding:10px 10px;
+  transition:0.2s;   
+}
+/* ALL A HOVER */
+nav.vertical li:hover > a
+{
+  /*background:#778;*/
+  /*background:#667;*/
+  background-color: #9a007b;  
+  color: #fdf9f9;
+  font:bold;
+}
+
+/* INNER UL HIDE */
+nav.vertical ul ul
+{
+  padding-left:0px;
+  transition: max-height 0.2s ease-out;
+  max-height:0;
+  overflow:hidden;
+  margin-left:5px;
+  font-size:12px;
+  color: #020202;
+}
+/* INNER UL SHOW */
+nav.vertical li:hover > ul
+{
+  max-height:500px;
+  width:182px;
+  transition: max-height 0.25s ease-in;
+  color:#060606;
+  /*background-color: #e74c3c;*/
+  /*display :block;*/
+  padding-left :12px;
+}
+
+.Footer
+{
+	height:25px;
+	width:100%;	       
+    text-align:center;
+    padding-top: 0px;
+    padding-bottom:0px;
+    font-family :Arial ,Arial ;
+    font-size:13px;
+    font-weight:bold;
+    background-image:url(../Images/MainLoginheader.jpg);
+}
+.labelColor
+{
+    color :#2a13f7;
+    font-weight:bold;
+    font-size:13px;
+    font-family:arial;
+}
+.list
+{
+    background:url(../images/arrow.png) right no-repeat !important;
+    padding-right:10px;
+    /*background-color:#97c700 !important;*/
+    height:16px;
+    
+}
+
+.list:hover
+{
+    background:url(../images/arrow.png) right no-repeat !important;
+    padding-right:10px;
+    background-color:#9a007b !important;
+    height:16px;
+}

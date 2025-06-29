@@ -1,0 +1,211 @@
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-family: 'arial', arial;
+  font-size: 20px;
+  position: relative;
+}
+#cssmenu a {
+  line-height: 1.3;
+  padding: 6px 15px;
+}
+#cssmenu {
+     width: 200px;
+    /*margin-top: -200px;
+    margin-left: -234px;*/
+}
+#cssmenu > ul > li {
+  cursor: pointer;
+  background: #000;
+  border-bottom: 1px solid #4c4e53;
+}
+#cssmenu > ul > li:last-child {
+  border-bottom: 1px solid #3e3d3c;
+}
+#cssmenu > ul > li > a {
+  font-size: 20px;
+  display: block;
+  color: #ffffff;
+  text-shadow: 0 1px 1px #000;
+  background: #64676e;
+   /*background: -moz-linear-gradient(#64676e 0%, #4c4e53 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #64676e), color-stop(100%, #4c4e53));
+  background: -webkit-linear-gradient(#64676e 0%, #4c4e53 100%);*/
+  background: linear-gradient(#64676e 0%, #4c4e53 100%);
+}
+#cssmenu > ul > li > a:hover {
+  text-decoration: none;
+}
+#cssmenu > ul > li.active {
+  border-bottom: none;
+}
+#cssmenu > ul > li.active > a {
+  background: #97c700;
+  /*background: -moz-linear-gradient(#97c700 0%, #709400 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #97c700), color-stop(100%, #709400));
+  background: -webkit-linear-gradient(#97c700 0%, #709400 100%);*/
+  background: linear-gradient(#97c700 0%, #709400 100%);
+  color: #ffffff;
+  text-shadow: 0 1px 1px #709400;
+}
+#cssmenu > ul > li.has-sub > a:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 5px solid transparent;
+  border-left: 5px solid #ffffff;
+}
+#cssmenu > ul > li.has-sub.active > a:after {
+  right: 14px;
+  top: 12px;
+  border: 5px solid transparent;
+  border-top: 5px solid #4e5800;
+}
+/* Sub menu */
+#cssmenu ul ul {
+  padding: 0;
+  display: none;
+}
+#cssmenu ul ul a {
+  background: #0408b6;
+  display: block;
+  color: #ffffff;
+  font-size: 20px;
+}
+#cssmenu ul ul li {
+  border-bottom: 1px solid #c9c9c9;
+}
+#cssmenu ul ul li.odd a {
+  background: #0408b6;
+}
+#cssmenu ul ul li:last-child {
+  border: none;
+}
+
+.pdfoverall{
+    width:48%;
+    height:1365px;
+    position:absolute;
+    border:1px solid #525659;
+    opacity:0.1;
+}
+.pdfoverallnew{
+    width:26%;
+    height:600px;
+    position:absolute;
+    border:1px solid #525659;
+    opacity:0.1;
+}
+.pdfoverallnew2{
+    width:27%;
+    height:600px;
+    position:absolute;
+    border:1px solid #525659;
+    opacity:0.1;
+}
+
+.studscript_outer{
+    width:48%;
+    height:1360px;
+    border:2px solid #0072c5;
+    margin-top:-1200px
+}
+.studscript_outernew{
+        width: 26%;
+    height: 600px;
+    border: 2px solid #0072c5;
+    margin-top: 0px;
+    margin-left: 983px;
+}
+.studscript_outernew2{
+        width: 26%;
+    height: 600px;
+    border: 2px solid #0072c5;
+    margin-top: 0px;
+    margin-left: 983px;
+}
+.pdfnewbut{
+       margin-left: 889px;
+    margin-top: -1393px;
+    font-size: large;
+}
+.pdfnewbut2{
+    margin-left: 1159px;
+    margin-top: -2px;
+}
+
+.pnlPdfview {
+
+    width:100%;
+    height:1220px;
+    border:1px solid #0072c5;
+    margin:0px 20px 20px 0px;
+
+}
+.pnlPdfviewnew {
+
+    width:100%;
+    height:1220px;
+    border:1px solid #0072c5;
+    margin:0px 20px 20px 0px;
+
+}
+#pnlPdfview{
+    width:100%;
+    height:1360px;
+    border:1px solid #0072c5;
+    margin:0px 0px 20px 0px;
+}
+.grid_IntMarksDisplay {
+    border-width: 1px;
+    border-style: Solid;
+    overflow: scroll;
+    text-align: left;
+    /* margin-left: 312px; */
+    margin-left: 644px;
+    margin-top: 694px;
+    height: 1200px;
+    width:330px;
+
+}
+.table{
+background-color:#f9c903;
+    width: 1333px;
+    height: 31px;
+}
+.tablenew{
+background-color:#f9c903;
+    width: 1333px;
+    height: 31px;
+    font-size: larger;
+}
+/*.midmarks{
+    color: #B11414;
+    font-size: Medium;
+    font-weight: bold;
+    margin-left: -200px;
+    margin-top: 72px;
+    float: right;
+}*/
+.headernew{
+        background-color: #f9c903;
+    width: 1330px;
+    margin-top: -18px;
+    height: 81px;
+}
+.midmarks{
+        margin-top: -36px;
+}
+.pdfbuttonsgrid{
+        font-size: large;
+}
